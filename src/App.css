@@ -1,38 +1,67 @@
-.App {
+.currency-converter {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 5px solid #e70a0a;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(15, 15, 15, 0.2);
+  background-color: #f8f8f8;
+  color: rgb(19, 2, 2); 
+ justify-content: center;
+ height: 10;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.currency-converter h1 {
+  font-size: 24px;
   text-align: center;
+  font-style: oblique;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.currency-converter label {
+  display: block;
+  margin-bottom: 10px;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.currency-converter input[type="number"],
+.currency-converter input[type="text"],
+.currency-converter select {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #da0808;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.currency-converter button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #2dc420;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.currency-converter button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.currency-converter p {
+  color: rgb(41, 12, 12); 
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  background-color:  black;
 }
